@@ -4,10 +4,10 @@ import javax.persistence.*;
 import java.util.Objects;
 
 /**
- **
+ * *
  * <p>Created by irina on 6/29/2022.</p>
  * <p>Project: spring-boot-jpa-projection</p>
- **
+ * *
  */
 @Entity
 public class Contact {
