@@ -1,6 +1,5 @@
 package com.mytests.spring.jpaProjections;
 
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.RepositoryDefinition;
 
 import java.util.List;
@@ -12,6 +11,7 @@ import java.util.List;
  * *
  */
 @RepositoryDefinition(domainClass = Contact.class, idClass = Integer.class)
-public interface ContactProjectionRepo extends CrudRepository<Contact,Integer> {
+public interface ContactProjectionRepository {
+    List<ContactProjection> findBy();
     List<ContactProjection> findByFirstname(String firstname);
 }

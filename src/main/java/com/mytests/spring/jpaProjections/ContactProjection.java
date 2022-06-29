@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
  */
 public interface ContactProjection {
 
-    @Value("#{#target.firstname+' '+#target.lastname}")
+    @Value("#{target.firstname + ' ' + target.lastname}")
     String getName();
-    @Value("#{#target.email}")
+    @Value("#{target.email}")
     String getMailAddress();
 
     //String getPhone();
