@@ -15,5 +15,5 @@ public interface ContactProjection {
     @Value("#{#target.email}")
     String getMailAddress();
 
-    String getPhone();
+    //String getPhone();
 }
